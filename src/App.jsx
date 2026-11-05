@@ -2,6 +2,9 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './modules/auth/states/AuthProvider';
 import LoginPage from './modules/auth/components/LoginPage';
 import RutaProtegida from './modules/core/components/RutaProtegida';
+import TrabajadoresPage from './modules/trabajadores/components/TrabajadoresPage';
+import TrabajadorDetallePage from './modules/trabajadores/components/TrabajadorDetallePage';
+import SolicitudesPage from './modules/solicitudes/components/SolicitudesPage';
 
 function App() {
   return (
@@ -10,9 +13,9 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route element={<RutaProtegida />}>
-            <Route path="/trabajadores" element={<p>Bloque 2: lista de trabajadores</p>} />
-            <Route path="/trabajadores/:id" element={<p>Bloque 3: perfil del trabajador</p>} />
-            <Route path="/solicitudes" element={<p>Bloque 4: mis solicitudes</p>} />
+            <Route path="/trabajadores" element={<TrabajadoresPage />} />
+            <Route path="/trabajadores/:id" element={<TrabajadorDetallePage />} />
+            <Route path="/solicitudes" element={<SolicitudesPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/trabajadores" replace />} />
         </Routes>
