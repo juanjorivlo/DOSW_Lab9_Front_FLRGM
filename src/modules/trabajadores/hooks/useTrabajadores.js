@@ -13,7 +13,7 @@ export function useTrabajadores() {
       .then((datos) => setTrabajadores(datos))
       .catch((e) => {
         if (e.status === 401) {
-          logout();
+          logout(); 
         } else {
           setError(e.message);
         }
