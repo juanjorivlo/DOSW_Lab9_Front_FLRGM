@@ -1,7 +1,7 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { AuthProvider } from './modules/auth/states/AuthProvider'
-import LoginPage from './modules/auth/components/LoginPage'
-import RutaProtegida from './modules/core/components/RutaProtegida'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { AuthProvider } from './modules/auth/states/AuthProvider';
+import LoginPage from './modules/auth/components/LoginPage';
+import RutaProtegida from './modules/core/components/RutaProtegida';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </AuthProvider>
-  )
+  );
 }
 
-export default App
+export default App;
