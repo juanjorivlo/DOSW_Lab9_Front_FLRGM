@@ -8,7 +8,8 @@ Aplicación web (React + Vite) para el laboratorio de front-end de OficioYa. Un 
 - Backend de OficioYa (laboratorio de seguridad) corriendo en el puerto 8080 con el perfil `dev`.
 - Dos usuarios de prueba creados en el back: uno `CONTRATANTE` y uno `TRABAJADOR`.
 
-Repositorio del back: https://github.com/DOSW-2026-2/security
+Repositorio del back: https://github.com/JElaverdem/DOSW_Lab8_FLRGM
+Enunciado del laboratorio: https://github.com/DOSW-2026-2/security
 
 ## Ejecución
 
@@ -62,7 +63,20 @@ modules/
 
 ## Evidencias
 
-Capturas del recorrido completo en `docs/evidencias/`.
+Capturas en `docs/evidencias/`:
+
+| # | Captura |
+|---|---|
+| 01 | `/solicitudes` sin sesión redirige a `/login` |
+| 02 | Login con contraseña errónea (mensaje del back) |
+| 03 | Lista de trabajadores con Pedro |
+| 04 | Solicitud enviada y visible como PENDIENTE |
+| 05 | Pedro con Aceptar/Rechazar |
+| 06 | Solicitud ACEPTADA |
+| 07 | Solicitud CANCELADA por Carla |
+| 08 | Tras F5 vuelve al login (el token vive en memoria) |
+| 09 | Encabezado `Authorization: Bearer ...` (token tapado) |
+| 10 | 403 cuando un TRABAJADOR intenta crear una solicitud |
 
 ## Preguntas
 
